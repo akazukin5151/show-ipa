@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "npx webpack --mode=production && cp src/options.html build/",
+    "dev": "npx webpack --mode=development && cp src/options.html build/",
+    "clean": "rm -r build/",
+    "release": "zip -r -FS build/index.zip build/ LICENSE manifest.json README.md && zip -r -FS build/source.zip * --exclude '*.git*' --exclude '*node_modules*'"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.5.4",
+    "ts-loader": "^9.2.2",
+    "webextension-polyfill-ts": "^0.26.0",
+    "webpack": "^5.37.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

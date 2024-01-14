@@ -1,0 +1,18 @@
+{
+  "include": ["src/*"],
+  "sourceMap": true,
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "outDir": "build",
+    "lib": ["es2019", "dom"],
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "target": "ES6"
+  }
+}
